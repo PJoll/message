@@ -1,6 +1,6 @@
 import React from 'react';
 import GoogleSignIn from "../img/btn_google_signin_dark_focus_web.png";
-import auth from "../firebase";
+import {auth} from "../firebase";
 import {useAuthState} from "react-firebase-hooks/auth";
 import { GoogleAuthProvider, signInWithRedirect } from 'firebase/auth';
 
