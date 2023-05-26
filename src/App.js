@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {auth} from "./firebase";
 import {useAuthState} from "react-firebase-hooks/auth";
@@ -13,7 +12,13 @@ function App() {
   return (
     <div className="App">
      <NavBar/>
-     { !user ? <Welcome/> : <ChatBox/>}
+     { !user ? (
+       <Welcome/>
+       ) : (
+        <>
+        <ChatBox/>
+        </>
+        )}
     </div>
   );
 }
